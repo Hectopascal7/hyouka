@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hyouka:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>hyouka</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="hyouka-1.0.0.war">
+      <element id="artifact" artifact-name="hyouka:war exploded" />
+    </root>
+  </artifact>
+</component>
