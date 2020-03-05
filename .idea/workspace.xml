@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e89ff86f-1b9b-4098-baad-106b2667c284" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/HyoukaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/net/iscream/hyouka/HyoukaApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="e89ff86f-1b9b-4098-baad-106b2667c284" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +42,11 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\hyouka" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="HyoukaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hyouka" />
@@ -75,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583408236927</updated>
       <workItem from="1583408242618" duration="1720000" />
-      <workItem from="1583413093695" duration="1140000" />
+      <workItem from="1583413093695" duration="1381000" />
     </task>
     <servers />
   </component>
