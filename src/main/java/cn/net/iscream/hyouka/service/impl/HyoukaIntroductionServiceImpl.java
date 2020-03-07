@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * ClassName : HyoukaIntroductionServiceImpl
- * Description : 个人简介实体服务
+ * Description : 个人简介实体服务实现
  * Author : Jeanne d'Arc
  * Date : 2020-03-06 19:48
  */
