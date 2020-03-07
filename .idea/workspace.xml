@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="hyouka:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89ff86f-1b9b-4098-baad-106b2667c284" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/common/HyoukaConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaIntroductionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/pojo/HyoukaIntroduction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/repository/HyoukaIntroductionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaIntroductionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaIntroductionServiceImpl.java" afterDir="false" />
+    <list default="true" id="e89ff86f-1b9b-4098-baad-106b2667c284" name="Default Changelist" comment="个人简介实体相关代码、常量类添加。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,6 +63,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -109,7 +110,10 @@
       <workItem from="1583408242618" duration="1720000" />
       <workItem from="1583413093695" duration="7489000" />
       <workItem from="1583492751027" duration="2361000" />
-      <workItem from="1583496649324" duration="4846000" />
+      <workItem from="1583496649324" duration="4921000" />
+      <workItem from="1583549106720" duration="7819000" />
+      <workItem from="1583565613260" duration="1693000" />
+      <workItem from="1583580745935" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="添加README文件。">
       <created>1583415960627</created>
@@ -132,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583423599616</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="个人简介实体相关代码、常量类添加。">
+      <created>1583506410019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583506410019</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +153,8 @@
     <MESSAGE value="添加README文件。" />
     <MESSAGE value="暂时去除spring-security依赖；菜单实体相关代码添加。" />
     <MESSAGE value="标签实体相关代码添加。" />
-    <option name="LAST_COMMIT_MESSAGE" value="标签实体相关代码添加。" />
+    <MESSAGE value="个人简介实体相关代码、常量类添加。" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人简介实体相关代码、常量类添加。" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -154,46 +166,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583416251956" />
-    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1583498938107">
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1583562008022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583498938107" />
-    <state x="572" y="117" key="CommitChangelistDialog2" timestamp="1583423595902">
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583562008022" />
+    <state x="572" y="117" key="CommitChangelistDialog2" timestamp="1583562274189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583423595902" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1583502468868">
+    <state x="572" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583562274189" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1583568783693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468868" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1583502468868">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583568783693" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1583568783692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468868" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1583502468868">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583568783692" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1583568783692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468868" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1583502468868">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583568783692" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1583568783693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468868" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1583502468870">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583568783693" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1583564729400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468870" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1583502468869">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583564729400" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1583564729400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468869" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1583502468869">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583564729400" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1583564729400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468869" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1583502468869">
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583564729400" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1583564729400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583502468869" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583564729400" />
+    <state x="732" y="233" key="RollbackChangesDialog" timestamp="1583562262297">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="233" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583562262297" />
     <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583423605428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
