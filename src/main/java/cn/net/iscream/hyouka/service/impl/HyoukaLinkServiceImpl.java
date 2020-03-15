@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service.impl;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaLink;
 import cn.net.iscream.hyouka.repository.HyoukaLinkRepository;
 import cn.net.iscream.hyouka.service.IHyoukaLinkService;
@@ -21,7 +22,9 @@ public class HyoukaLinkServiceImpl implements IHyoukaLinkService {
     private HyoukaLinkRepository hyoukaLinkRepository;
 
     @Override
-    public List<HyoukaLink> list() {
-        return hyoukaLinkRepository.findAll();
+    public HyoukaServerResponse<List<HyoukaLink>> list() {
+        List<HyoukaLink> hyoukaLinkList = hyoukaLinkRepository.findAll();
+        return HyoukaServerResponse.createBySuccess(hyoukaLinkList);
     }
+
 }

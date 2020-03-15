@@ -6,18 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89ff86f-1b9b-4098-baad-106b2667c284" name="Default Changelist" comment="添加文章实体类及文章详情获取接口；添加文章分类实体。">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaLinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaSpecialColumnController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/pojo/HyoukaLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/pojo/HyoukaSpecialColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/repository/HyoukaLinkRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/repository/HyoukaSpecialColumnRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaLinkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaSpecialColumnService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaLinkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaSpecialColumnServiceImpl.java" afterDir="false" />
+    <list default="true" id="e89ff86f-1b9b-4098-baad-106b2667c284" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/common/HyoukaResponseCodeConst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/common/HyoukaServerResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaIntroductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaIntroductionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaLinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaLinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaSpecialColumnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaSpecialColumnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaTagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/controller/HyoukaTagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaIntroductionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaIntroductionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaLinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaLinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaSpecialColumnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaSpecialColumnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/IHyoukaTagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaIntroductionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaIntroductionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaLinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaLinkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaMenuImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaMenuImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaSpecialColumnServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaSpecialColumnServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaTagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/net/iscream/hyouka/service/impl/HyoukaTagServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +138,9 @@
       <workItem from="1583667007933" duration="3008000" />
       <workItem from="1584013501144" duration="1058000" />
       <workItem from="1584098224491" duration="574000" />
-      <workItem from="1584154763006" duration="7874000" />
+      <workItem from="1584154763006" duration="9234000" />
+      <workItem from="1584238114064" duration="1689000" />
+      <workItem from="1584270236230" duration="5090000" />
     </task>
     <task id="LOCAL-00001" summary="添加README文件。">
       <created>1583415960627</created>
@@ -172,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583594861637</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加友情链接、特别专栏实体类及相关方法。">
+      <created>1584198154089</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584198154089</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +204,8 @@
     <MESSAGE value="个人简介实体相关代码、常量类添加。" />
     <MESSAGE value="修改项目运行端口配置，使用80端口。" />
     <MESSAGE value="添加文章实体类及文章详情获取接口；添加文章分类实体。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加文章实体类及文章详情获取接口；添加文章分类实体。" />
+    <MESSAGE value="添加友情链接、特别专栏实体类及相关方法。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加友情链接、特别专栏实体类及相关方法。" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -197,59 +217,67 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583416251956" />
-    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1584195380750">
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1584273443921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584195380750" />
-    <state x="572" y="117" width="1068" height="806" key="CommitChangelistDialog2" timestamp="1584198070237">
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584273443921" />
+    <state x="572" y="117" width="1068" height="806" key="CommitChangelistDialog2" timestamp="1584198144898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="407" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583680058831" />
-    <state x="572" y="117" width="1068" height="806" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584198070237" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584195957770">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="572" y="117" width="1068" height="806" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584198144898" />
+    <state width="1323" height="282" key="GridCell.Tab.0.bottom" timestamp="1584201047105">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584201047105" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957770" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584195957769">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.0.center" timestamp="1584201047104">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584201047104" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957769" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584195957769">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.0.left" timestamp="1584201047104">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584201047104" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957769" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584195957770">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.0.right" timestamp="1584201047105">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584201047105" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957770" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1584195957771">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.1.bottom" timestamp="1584201047105">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584201047105" />
     <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957771" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1584195957770">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.1.center" timestamp="1584201047105">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584201047105" />
     <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957770" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1584195957770">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.1.left" timestamp="1584201047105">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584201047105" />
     <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957770" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1584195957770">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="282" key="GridCell.Tab.1.right" timestamp="1584201047105">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="282" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584201047105" />
     <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195957770" />
     <state x="732" y="233" key="RollbackChangesDialog" timestamp="1583562262297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="233" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583562262297" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583594876170">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584198180268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583594876170" />
-    <state x="298" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1584154845965">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584198180268" />
+    <state x="298" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1584238197752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="298" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584154845965" />
+    <state x="298" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584238197752" />
     <state x="647" y="275" width="626" height="490" key="find.popup" timestamp="1584176239662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

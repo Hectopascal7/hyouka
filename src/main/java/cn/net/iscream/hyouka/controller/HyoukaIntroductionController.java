@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.controller;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
 import cn.net.iscream.hyouka.pojo.HyoukaMenu;
 import cn.net.iscream.hyouka.service.IHyoukaIntroductionService;
@@ -25,7 +26,7 @@ public class HyoukaIntroductionController {
 
     @CrossOrigin
     @GetMapping("/api/hyoukaintroduction")
-    public HyoukaIntroduction find() {
+    public HyoukaServerResponse<HyoukaIntroduction> find() {
         return iHyoukaIntroductionService.find();
     }
 

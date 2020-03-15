@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service.impl;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaMenu;
 import cn.net.iscream.hyouka.repository.HyoukaMenuRepository;
 import cn.net.iscream.hyouka.service.IHyoukaMenuService;
@@ -18,12 +19,13 @@ import java.util.List;
 @Service
 public class HyoukaMenuImpl implements IHyoukaMenuService {
 
-
     @Autowired
     private HyoukaMenuRepository hyoukaMenuRepository;
 
     @Override
-    public List<HyoukaMenu> list() {
-        return hyoukaMenuRepository.findAll(Sort.by(Sort.Direction.ASC, "menuorder"));
+    public HyoukaServerResponse<List<HyoukaMenu>> list() {
+        List<HyoukaMenu> hyoukaMenuList = hyoukaMenuRepository.findAll(Sort.by(Sort.Direction.ASC, "menuorder"));
+        return HyoukaServerResponse.createBySuccess(hyoukaMenuList);
     }
+
 }

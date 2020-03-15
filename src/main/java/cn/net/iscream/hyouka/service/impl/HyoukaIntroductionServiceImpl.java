@@ -1,6 +1,7 @@
 package cn.net.iscream.hyouka.service.impl;
 
 import cn.net.iscream.hyouka.common.HyoukaConst;
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
 import cn.net.iscream.hyouka.repository.HyoukaIntroductionRepository;
 import cn.net.iscream.hyouka.service.IHyoukaIntroductionService;
@@ -20,8 +21,9 @@ public class HyoukaIntroductionServiceImpl implements IHyoukaIntroductionService
     private HyoukaIntroductionRepository hyoukaIntroductionRepository;
 
     @Override
-    public HyoukaIntroduction find() {
-        return hyoukaIntroductionRepository.findByIsenableEquals(HyoukaConst.HYOUKA_INTRODUCTION_STATUS_ENABLE);
+    public HyoukaServerResponse<HyoukaIntroduction> find() {
+        HyoukaIntroduction hyoukaIntroduction = hyoukaIntroductionRepository.findByIsenableEquals(HyoukaConst.HYOUKA_INTRODUCTION_STATUS_ENABLE);
+        return HyoukaServerResponse.createBySuccess(hyoukaIntroduction);
     }
 
 }

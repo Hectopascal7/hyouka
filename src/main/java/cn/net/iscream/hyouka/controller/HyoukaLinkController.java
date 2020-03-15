@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.controller;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaLink;
 import cn.net.iscream.hyouka.pojo.HyoukaMenu;
 import cn.net.iscream.hyouka.service.IHyoukaLinkService;
@@ -24,7 +25,8 @@ public class HyoukaLinkController {
 
     @CrossOrigin
     @GetMapping("/api/hyoukalinks")
-    public List<HyoukaLink> list() {
+    public HyoukaServerResponse<List<HyoukaLink>> list() {
         return iHyoukaLinkService.list();
     }
+
 }

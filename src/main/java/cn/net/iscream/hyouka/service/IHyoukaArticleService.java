@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaArticle;
 import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
 
@@ -10,5 +11,7 @@ import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
  * Date : 2020-03-07 19:45
  */
 public interface IHyoukaArticleService {
-    HyoukaArticle findByCategoryAndArticleid(String categoryName, String articleId);
+
+    HyoukaServerResponse<HyoukaArticle> findByCategoryAndArticleid(String categoryName, String articleId);
+
 }

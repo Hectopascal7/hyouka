@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
 
 /**
@@ -9,5 +10,7 @@ import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
  * Date : 2020-03-06 19:48
  */
 public interface IHyoukaIntroductionService {
-    HyoukaIntroduction find();
+
+    HyoukaServerResponse<HyoukaIntroduction> find();
+
 }

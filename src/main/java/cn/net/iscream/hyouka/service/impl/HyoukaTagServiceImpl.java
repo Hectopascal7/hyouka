@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service.impl;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaTag;
 import cn.net.iscream.hyouka.repository.HyoukaMenuRepository;
 import cn.net.iscream.hyouka.repository.HyoukaTagRepository;
@@ -22,7 +23,9 @@ public class HyoukaTagServiceImpl implements IHyoukaTagService {
     private HyoukaTagRepository hyoukaTagRepository;
 
     @Override
-    public List<HyoukaTag> list() {
-        return hyoukaTagRepository.findAll();
+    public HyoukaServerResponse<List<HyoukaTag>> list() {
+        List<HyoukaTag> hyoukaTagList = hyoukaTagRepository.findAll();
+        return HyoukaServerResponse.createBySuccess(hyoukaTagList);
     }
+
 }

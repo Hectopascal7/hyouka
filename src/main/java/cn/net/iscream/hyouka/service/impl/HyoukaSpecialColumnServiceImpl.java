@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service.impl;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaSpecialColumn;
 import cn.net.iscream.hyouka.repository.HyoukaSpecialColumnRepository;
 import cn.net.iscream.hyouka.service.IHyoukaSpecialColumnService;
@@ -22,7 +23,9 @@ public class HyoukaSpecialColumnServiceImpl implements IHyoukaSpecialColumnServi
     private HyoukaSpecialColumnRepository hyoukaSpecialColumnRepository;
 
     @Override
-    public List<HyoukaSpecialColumn> list() {
-        return hyoukaSpecialColumnRepository.findAll(Sort.by(Sort.Direction.ASC, "order"));
+    public HyoukaServerResponse<List<HyoukaSpecialColumn>> list() {
+        List<HyoukaSpecialColumn> hyoukaSpecialColumnList = hyoukaSpecialColumnRepository.findAll(Sort.by(Sort.Direction.ASC, "order"));
+        return HyoukaServerResponse.createBySuccess(hyoukaSpecialColumnList);
     }
+
 }

@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service.impl;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaArticle;
 import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
 import cn.net.iscream.hyouka.repository.HyoukaArticleRepository;
@@ -19,9 +20,10 @@ public class HyoukaArticleServiceImpl implements IHyoukaArticleService {
     @Autowired
     private HyoukaArticleRepository hyoukaArticleRepository;
 
-
     @Override
-    public HyoukaArticle findByCategoryAndArticleid(String categoryName, String articleId) {
-        return hyoukaArticleRepository.findByCategoryAndArticleid(categoryName, articleId);
+    public HyoukaServerResponse<HyoukaArticle> findByCategoryAndArticleid(String categoryName, String articleId) {
+        HyoukaArticle hyoukaArticle = hyoukaArticleRepository.findByCategoryAndArticleid(categoryName, articleId);
+        return HyoukaServerResponse.createBySuccess(hyoukaArticle);
     }
+
 }

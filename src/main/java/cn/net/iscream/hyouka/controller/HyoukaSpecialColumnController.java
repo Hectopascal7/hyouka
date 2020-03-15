@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.controller;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaSpecialColumn;
 import cn.net.iscream.hyouka.pojo.HyoukaTag;
 import cn.net.iscream.hyouka.service.IHyoukaSpecialColumnService;
@@ -24,7 +25,7 @@ public class HyoukaSpecialColumnController {
 
     @CrossOrigin
     @GetMapping("/api/hyoukaspecialcolumns")
-    public List<HyoukaSpecialColumn> list() {
+    public HyoukaServerResponse<List<HyoukaSpecialColumn>> list() {
         return iHyoukaSpecialColumnService.list();
     }
 }

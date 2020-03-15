@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.service;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaTag;
 
 import java.util.List;
@@ -11,5 +12,7 @@ import java.util.List;
  * Date : 2020-03-05 23:29
  */
 public interface IHyoukaTagService {
-    List<HyoukaTag> list();
+
+    HyoukaServerResponse<List<HyoukaTag>> list();
+
 }

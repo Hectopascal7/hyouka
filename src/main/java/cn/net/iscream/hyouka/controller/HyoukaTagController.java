@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.controller;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaTag;
 import cn.net.iscream.hyouka.service.IHyoukaTagService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +18,14 @@ import java.util.List;
  */
 @RestController
 public class HyoukaTagController {
+
     @Autowired
     private IHyoukaTagService iHyoukaTagService;
 
     @CrossOrigin
     @GetMapping("/api/hyoukatags")
-    public List<HyoukaTag> list() {
+    public HyoukaServerResponse<List<HyoukaTag>> list() {
         return iHyoukaTagService.list();
     }
+
 }

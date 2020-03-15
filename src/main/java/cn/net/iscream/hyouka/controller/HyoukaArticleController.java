@@ -1,5 +1,6 @@
 package cn.net.iscream.hyouka.controller;
 
+import cn.net.iscream.hyouka.common.HyoukaServerResponse;
 import cn.net.iscream.hyouka.pojo.HyoukaArticle;
 import cn.net.iscream.hyouka.pojo.HyoukaIntroduction;
 import cn.net.iscream.hyouka.service.IHyoukaArticleService;
@@ -23,7 +24,7 @@ public class HyoukaArticleController {
 
     @CrossOrigin
     @GetMapping("/api/hyoukaarticle/{category}/{articleid}")
-    public HyoukaArticle find(@PathVariable("category") String categoryName, @PathVariable("articleid") String articleId) {
+    public HyoukaServerResponse<HyoukaArticle> find(@PathVariable("category") String categoryName, @PathVariable("articleid") String articleId) {
         return iHyoukaArticleService.findByCategoryAndArticleid(categoryName, articleId);
     }
 
